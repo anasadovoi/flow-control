@@ -25,15 +25,28 @@ print("Parking (free/total):", free, "/",total,"places" )
 for i in range(len(p)):
     print(i, p[i])
 
-s = []
-j=0
+
 
 ########## PRINT STATS ################
+m = 0
+b = 0
+t = 0
 for i in range(len(p)):
     if p[i] != None:
-        s[j] = p[i]
+        if p[i] == "Mercedes":
+            m += 1
+        elif p[i] == "BMW":
+            b += 1  
+        elif p[i] == "Toyota":
+            t += 1
 
-print(s[j])
+print()
+print ("########Stats############")
+print("Mercedes", m)
+print("BMW", b)
+print("TOyota", t)
+
+
     
         
 
