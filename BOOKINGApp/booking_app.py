@@ -11,6 +11,10 @@ while lib.running:
         lib.searchDestination()
     if lib.option == 2:
         lib.renderDestinations()
+    if lib.option == 3:
+        lib.renderOrder()
+    if lib.option == 4:
+        lib.deleteOrder()
     if lib.option == 0:
         running = False
 
