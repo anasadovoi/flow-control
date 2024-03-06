@@ -80,8 +80,8 @@ def searchDestination():
 
 def renderOrder():
     pnc = input("enter your personal number: ")
-    if exists(f"{pnc}.txt"):
-        file = open(f"{pnc}.txt", "r")
+    if exists(f"BOOKINGApp\data\{pnc}.txt"):
+        file = open(f"BOOKINGApp\data\{pnc}.txt", "r")
         lines = file.readlines()
         print("Your order details: ")
         for line in lines:
